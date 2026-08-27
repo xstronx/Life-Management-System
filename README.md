@@ -25,3 +25,21 @@
 ---
 
 > 📄 *Para consultar el plan general completo en un solo archivo, revisa el [Plan de Desarrollo Original](./planes-de-accion/Plan_Desarrollo.md).*
+
+---
+
+## ▶️ Ejecutar backend con `.env`
+
+1. Ir a la carpeta `backend`.
+2. Verificar que exista el archivo `.env` (hay plantilla en `backend/.env.example`).
+3. Ejecutar:
+
+```bash
+mvn spring-boot:run
+```
+
+4. Probar salud del servicio:
+
+```bash
+GET http://localhost:8080/api/health
+```
