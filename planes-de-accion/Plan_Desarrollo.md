@@ -456,12 +456,12 @@ Permitir que cada usuario pueda registrarse, autenticarse y acceder a sus propio
 - FASE 3 completada
 
 ### Tareas
-- [ ] Definir modelo de usuario
-- [ ] Implementar registro
-- [ ] Implementar login
-- [ ] Configurar JWT
-- [ ] Definir permisos y autorización
-- [ ] Crear perfil y gestión de usuario
+- [x] Definir modelo de usuario
+- [x] Implementar registro
+- [x] Implementar login
+- [x] Configurar JWT
+- [x] Definir permisos y autorización
+- [x] Crear perfil y gestión de usuario
 
 ### Subtareas
 - Cifrado de contraseñas
@@ -483,11 +483,11 @@ Permitir que cada usuario pueda registrarse, autenticarse y acceder a sus propio
 El usuario puede registrarse, iniciar sesión, mantener su sesión, y acceder únicamente a sus datos.
 
 ### Criterios de aceptación
-- [ ] El registro funciona
-- [ ] El login devuelve token válido
-- [ ] Los endpoints protegidos requieren autenticación
-- [ ] Las credenciales se almacenan de forma segura
-- [ ] El usuario solo ve su información
+- [x] El registro funciona
+- [x] El login devuelve token válido
+- [x] Los endpoints protegidos requieren autenticación
+- [x] Las credenciales se almacenan de forma segura
+- [x] El usuario solo ve su información
 
 ### Pruebas
 - Unit tests de hashing y JWT
@@ -1889,4 +1889,3 @@ Checklist maestro final:
 - [ ] Testing y seguridad validados
 - [ ] Infraestructura desplegable
 - [ ] Version 1.0 lista para release
-

@@ -1,4 +1,4 @@
 package com.lms.dto;
 
-public record AuthResponse(String email, String token) {
+public record AuthResponse(String email, String fullName, String token) {
 }

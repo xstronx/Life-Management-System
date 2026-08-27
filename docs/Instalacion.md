@@ -73,7 +73,13 @@ Definir variables necesarias como:
 - credenciales y puerto del entorno
 
 ### 3. Levantar la base de datos
-La base de datos puede manejarse con PostgreSQL local o con Docker para mantener consistencia entre entornos.
+Para PostgreSQL 17 local, crea la base de datos antes de arrancar el backend:
+
+```sql
+CREATE DATABASE lms;
+```
+
+Después copia `backend/.env.example` a `backend/.env` y configura `DB_PASSWORD` con la contraseña de tu instalación.
 
 ### 4. Configurar backend
 Preparar estructura de Spring Boot con propiedades del entorno, seguridad y persistencia.
@@ -103,6 +109,8 @@ Confirmar que frontend y backend pueden comunicarse correctamente y que la base 
 - FRONTEND_URL
 - SERVER_PORT
 - CORS_ALLOWED_ORIGINS
+
+El backend usa PostgreSQL 17 por defecto. Las pruebas automatizadas usan una base H2 aislada mediante el perfil `test`.
 
 ## Recomendaciones de despliegue local
 
