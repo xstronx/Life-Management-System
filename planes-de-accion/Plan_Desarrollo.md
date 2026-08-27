@@ -516,12 +516,12 @@ Permitir gestionar cuentas financieras del usuario, el efectivo y el balance de 
 - FASE 4 completada
 
 ### Tareas
-- [ ] Crear entidad Account
-- [ ] Implementar CRUD de cuentas
-- [ ] Definir tipos de cuenta
-- [ ] Integrar saldo inicial
-- [ ] Gestionar cuentas activas/inactivas
-- [ ] Relacionar cuentas con usuario
+- [x] Crear entidad Account
+- [x] Implementar CRUD de cuentas
+- [x] Definir tipos de cuenta
+- [x] Integrar saldo inicial
+- [x] Gestionar cuentas activas/inactivas
+- [x] Relacionar cuentas con usuario
 
 ### Subtareas
 - Definir tipos de cuenta: bancaria, efectivo, ahorro, crédito, etc.
@@ -540,11 +540,11 @@ Permitir gestionar cuentas financieras del usuario, el efectivo y el balance de 
 El usuario puede crear, editar y consultar cuentas, con una visión clara del saldo disponible.
 
 ### Criterios de aceptación
-- [ ] Se pueden crear cuentas
-- [ ] Se pueden listar y editar cuentas
-- [ ] Se visualiza el saldo asociado
-- [ ] La cuenta pertenece al usuario autenticado
-- [ ] Los errores de validación son manejados
+- [x] Se pueden crear cuentas
+- [x] Se pueden listar y editar cuentas
+- [x] Se visualiza el saldo asociado
+- [x] La cuenta pertenece al usuario autenticado
+- [x] Los errores de validación son manejados
 
 ### Pruebas
 - CRUD de cuenta

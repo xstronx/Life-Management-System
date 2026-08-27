@@ -3,7 +3,7 @@ import { NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 
 const API_URL = 'http://localhost:8080/api';
 
-type AuthResponse = { email: string; fullName: string; token: string };
+type AuthResponse = { email: string; fullName: string; role: string; token: string };
 
 function AuthPage({ onAuthenticated }: { onAuthenticated: (auth: AuthResponse) => void }) {
   const [register, setRegister] = useState(false);
@@ -81,11 +81,14 @@ export default function App() {
   return <div className="app-shell">
     <aside className="sidebar">
       <div className="brand"><span className="brand-badge">LMS</span><div><strong>Life Management System</strong><small>{auth.email}</small></div></div>
-      <nav className="nav">{pages.map(([to, label]) => <NavLink key={to} to={to} className={({ isActive }) => `nav-link ${isActive ? 'nav-link-active' : ''}`}>{label}</NavLink>)}</nav>
+      <nav className="nav">{pages.map(([to, label]) => <NavLink key={to} to={to} className={({ isActive }) => `nav-link ${isActive ? 'nav-link-active' : ''}`}>{label}</NavLink>)}
+        {auth.role === 'ADMIN' && <NavLink to="/admin" className={({ isActive }) => `nav-link ${isActive ? 'nav-link-active' : ''}`}>Administración</NavLink>}
+      </nav>
       <button className="logout-button" onClick={logout}>Cerrar sesión</button>
     </aside>
     <main className="content"><Routes>
       <Route path="/" element={<DashboardPage name={auth.fullName} />} />
+      {auth.role === 'ADMIN' && <Route path="/admin" element={<section><h1>Administración</h1><p>Sesión administrativa activa para {auth.email}.</p></section>} />}
       {pages.slice(1).map(([path, label]) => <Route key={path} path={path} element={<section><h1>{label}</h1><p>Esta sección estará disponible en la siguiente fase.</p></section>} />)}
     </Routes></main>
   </div>;

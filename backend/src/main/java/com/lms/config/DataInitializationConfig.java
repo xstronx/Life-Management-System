@@ -8,6 +8,7 @@ import com.lms.domain.category.CategoryRepository;
 import com.lms.domain.category.CategoryType;
 import com.lms.domain.user.User;
 import com.lms.domain.user.UserRepository;
+import com.lms.domain.user.UserRole;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,6 +40,11 @@ public class DataInitializationConfig {
                 Category expense = new Category("Alimentación", CategoryType.EXPENSE, user);
                 categoryRepository.save(income);
                 categoryRepository.save(expense);
+            }
+            if (userRepository.findByEmail("admin@lms.com").isEmpty()) {
+                User admin = new User("admin@lms.com", new BCryptPasswordEncoder().encode("Admin12345"), "Administrador LMS");
+                admin.setRole(UserRole.ADMIN);
+                userRepository.save(admin);
             }
         };
     }

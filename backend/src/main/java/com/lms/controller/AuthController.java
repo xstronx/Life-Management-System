@@ -36,7 +36,7 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
         User user = userService.register(request);
-        return ResponseEntity.ok(new AuthResponse(user.getEmail(), user.getFullName(), jwtService.generateToken(user.getEmail())));
+        return ResponseEntity.ok(new AuthResponse(user.getEmail(), user.getFullName(), user.getRole().name(), jwtService.generateToken(user.getEmail())));
     }
 
     @PostMapping("/login")
@@ -44,7 +44,7 @@ public class AuthController {
         String email = userService.normalizeEmail(request.email());
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, request.password()));
         User user = userService.findByEmail(email);
-        return ResponseEntity.ok(new AuthResponse(user.getEmail(), user.getFullName(), jwtService.generateToken(user.getEmail())));
+        return ResponseEntity.ok(new AuthResponse(user.getEmail(), user.getFullName(), user.getRole().name(), jwtService.generateToken(user.getEmail())));
     }
 
     @PostMapping("/logout")

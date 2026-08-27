@@ -81,6 +81,10 @@ CREATE DATABASE lms;
 
 Después copia `backend/.env.example` a `backend/.env` y configura `DB_PASSWORD` con la contraseña de tu instalación.
 
+Si ya tenías una base `lms` creada antes de la fase 5, ejecuta una vez el script
+`backend/src/main/resources/postgres-migrations/V2__add_roles_and_account_status.sql`
+desde pgAdmin o `psql` para añadir las nuevas columnas sin perder datos.
+
 ### 4. Configurar backend
 Preparar estructura de Spring Boot con propiedades del entorno, seguridad y persistencia.
 
