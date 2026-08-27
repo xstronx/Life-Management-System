@@ -15,12 +15,12 @@
 
 ## 📌 Navegación Rápida a la Documentación
 
-* 🏛️ **[Ver Arquitectura y Base de Datos](./docs/arquitectura.md)**: Estructura general y modelo ER.
-* 🗺️ **[Ver Roadmap de Desarrollo (Fases 0 - 19)](./docs/roadmap.md)**: Plan detallado paso a paso.
-* 💻 **[Documentación de Frontend](./docs/frontend.md)**: Vistas, routing en React y Tailwind CSS.
-* ⚙️ **[Documentación de Backend y Seguridad](./docs/backend.md)**: Configuración Spring Boot, JWT y Testing.
-* 📡 **[Especificación de Endpoints API REST](./docs/api.md)**: Catálogo completo de endpoints.
-* 🛠️ **[Guía de Instalación Local con Docker](./docs/instalacion.md)**: Instrucciones para desplegar en tu equipo.
+* 🏛️ **[Ver Arquitectura y Base de Datos](./docs/Arquitectura.md)**: Estructura general y modelo ER.
+* 🗺️ **[Ver Roadmap de Desarrollo (Fases 0 - 19)](./docs/Roadmap.md)**: Plan detallado paso a paso.
+* 💻 **[Documentación de Frontend](./docs/Frontend.md)**: Vistas, routing en React y Tailwind CSS.
+* ⚙️ **[Documentación de Backend y Seguridad](./docs/Backend.md)**: Configuración Spring Boot, JWT y Testing.
+* 📡 **[Especificación de Endpoints API REST](./docs/Api.md)**: Catálogo completo de endpoints.
+* 🛠️ **[Guía de Instalación Local con Docker](./docs/Instalacion.md)**: Instrucciones para desplegar en tu equipo.
 
 ---
 
