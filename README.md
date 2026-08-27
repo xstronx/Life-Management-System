@@ -2,12 +2,12 @@
 
 # 🚀 Life Management System (LMS)
 
-[![Arquitectura](https://img.shields.io/badge/🏛️_Arquitectura-23272D?style=for-the-badge)](./docs/arquitectura.md)
-[![Roadmap](https://img.shields.io/badge/🗺️_Roadmap_Fases-0052CC?style=for-the-badge)](./docs/roadmap.md)
-[![Frontend](https://img.shields.io/badge/💻_Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black)](./docs/frontend.md)
-[![Backend](https://img.shields.io/badge/⚙️_Backend-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](./docs/backend.md)
-[![API Docs](https://img.shields.io/badge/📡_API_Docs-000000?style=for-the-badge&logo=swagger)](./docs/api.md)
-[![Instalación](https://img.shields.io/badge/🛠️_Instalacion-FF9900?style=for-the-badge)](./docs/instalacion.md)
+[![Arquitectura](https://img.shields.io/badge/🏛️_Arquitectura-23272D?style=for-the-badge)](./docs/Arquitectura.md)
+[![Roadmap](https://img.shields.io/badge/🗺️_Roadmap_Fases-0052CC?style=for-the-badge)](./docs/Roadmap.md)
+[![Frontend](https://img.shields.io/badge/💻_Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black)](./docs/Frontend.md)
+[![Backend](https://img.shields.io/badge/⚙️_Backend-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](./docs/Backend.md)
+[![API Docs](https://img.shields.io/badge/📡_API_Docs-000000?style=for-the-badge&logo=swagger)](./docs/Api.md)
+[![Instalación](https://img.shields.io/badge/🛠️_Instalacion-FF9900?style=for-the-badge)](./docs/Instalacion.md)
 
 </div>
 
@@ -24,4 +24,4 @@
 
 ---
 
-> 📄 *Para consultar el plan general completo en un solo archivo, revisa el [Plan de Desarrollo Original](./plan_de_accion/plan_de_desarrollo.md).*
+> 📄 *Para consultar el plan general completo en un solo archivo, revisa el [Plan de Desarrollo Original](./planes-de-accion/Plan_Desarrollo.md).*
